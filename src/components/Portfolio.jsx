@@ -10,20 +10,24 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
   const [selectedProjectDetails, setSelectedProjectDetails] = useState();
 
   const filters = {
-    DESIGN: "Desing",
+    AI: 'AI',
+    IOT: 'IoT',
+    DESIGN: "Design",
     BRAND: "Brand",
     PHOTOS: "Photos",
   };
 
   const projectsData = [
     {
-      title: "Project Title 1",
+      title: "Smart Garden",
       projectInfo:
-        "Quidam lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure. Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
-      client: "Ruby Clinton",
-      technologies: "iOS, HTML5, CSS3, PHP, Java",
-      industry: "Art & Design",
-      date: "July 16, 2019",
+        "My team and I have developed an IoT solution for collecting data and taking care of your home plants without consuming a lot of power. \
+        We have used a raspberry pi as a local webserver and access point which can control up-to 6 end units which were built on ESP32 chip. \
+        We have used several sensors such as soil moisture, temperature, light and uv in order to monitor the environment and its need for irrigation. \
+        In order to be power efficient we have managed to use a deep sleep mode on the end point units and have come with a solution for low power irrigation system \
+        which does not rely on pumps.",
+      technologies: "C++, Embedded, IoT, RaspberryPi, ESP32, Arduino",
+      date: "Dec, 2021",
       url: {
         name: "www.example.com",
         link: "https://www.example.com",
@@ -35,46 +39,39 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
         instagram: "http://www.instagram.com/",
         mail: "mailto:example@gmail.com",
       },
-      thumbImage: "images/projects/project-1.jpg",
+      thumbImage: "images/projects/smart_garden_1.jpg",
       sliderImages: [
-        "images/projects/project-1.jpg",
-        "images/projects/project-5.jpg",
+
       ],
-      categories: [filters.BRAND],
+      categories: [filters.IOT],
     },
     {
-      title: "Project Title 2",
+      title: "Generating melodies using Deep Learning",
       projectInfo:
-        "Quidam lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure. Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
-      client: "Ruby Clinton",
-      technologies: "iOS, HTML5, CSS3, PHP, Java",
-      industry: "Art & Design",
-      date: "July 16, 2019",
+        "For my final project at the Technion, my team and I (3 members) developed two melody generation models that won first place at the Technion Best AI Project of 2023. \
+        These models are capable of training on various kinds of melodies with multiple instruments to generate new melodies. \
+        We utilized PyTorch as our framework and built both RNN and GAN models. \
+        Throughout the project, we overcame numerous challenges, such as memory issues and theoretical obstacles related to music preprocessing. \
+        Our results, tested via Google Forms, were impressive — participants couldn't distinguish between human-written and model-generated melodies. \
+        Samples are available on my GitHub.",
+      technologies: "Python, PyTorch, NumPy, Pandas, Matplotlib",
+      date: "Nov, 2021",
       url: {
-        name: "www.example.com",
-        link: "https://www.example.com",
+        name: "github.com/Exital/GeneratingMelodies",
+        link: "https://github.com/Exital/GeneratingMelodies/tree/master/",
       },
-      socialLinks: {
-        facebook: "http://www.facebook.com/",
-        twitter: "http://www.twitter.com/",
-        google: "http://www.google.com/",
-        instagram: "http://www.instagram.com/",
-        mail: "mailto:example@gmail.com",
-      },
-      thumbImage: "images/projects/project-2.jpg",
+      thumbImage: "images/projects/generating_melodies_1.jpg",
       sliderImages: [
-        "images/projects/project-2.jpg",
-        "images/projects/project-5.jpg",
+        "images/projects/generating_melodies_2.jpg",
+        "images/projects/generating_melodies_3.jpg",
       ],
-      categories: [filters.DESIGN],
+      categories: [filters.AI],
     },
     {
       title: "Project Title 3",
       projectInfo:
         "Quidam lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure. Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
-      client: "Ruby Clinton",
       technologies: "iOS, HTML5, CSS3, PHP, Java",
-      industry: "Art & Design",
       date: "July 16, 2019",
       url: {
         name: "www.example.com",
@@ -98,9 +95,7 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
       title: "Project Title 4",
       projectInfo:
         "Quidam lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure. Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
-      client: "Ruby Clinton",
       technologies: "iOS, HTML5, CSS3, PHP, Java",
-      industry: "Art & Design",
       date: "July 16, 2019",
       url: {
         name: "www.example.com",
@@ -124,9 +119,7 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
       title: "Project Title 5",
       projectInfo:
         "Quidam lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure. Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
-      client: "Ruby Clinton",
       technologies: "iOS, HTML5, CSS3, PHP, Java",
-      industry: "Art & Design",
       date: "July 16, 2019",
       url: {
         name: "www.example.com",
@@ -150,9 +143,7 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
       title: "Project Title 6",
       projectInfo:
         "Quidam lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure. Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
-      client: "Ruby Clinton",
       technologies: "iOS, HTML5, CSS3, PHP, Java",
-      industry: "Art & Design",
       date: "July 16, 2019",
       url: {
         name: "www.example.com",
@@ -176,9 +167,7 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
       title: "Project Title 7",
       projectInfo:
         "Quidam lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure. Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
-      client: "Ruby Clinton",
       technologies: "iOS, HTML5, CSS3, PHP, Java",
-      industry: "Art & Design",
       date: "July 16, 2019",
       url: {
         name: "www.example.com",
