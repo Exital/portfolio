@@ -64,12 +64,10 @@ const AboutUs = ({ classicHeader, darkTheme }) => {
               Engineer
             </h2>
             <p className={darkTheme ? "text-white-50" : ""}>
-            I am a DevOps Engineer with strong programming skills, having graduated with <span className="text-primary">honors from the Technion</span>.
-            Known for being a fast learner and team player, I thrive on mastering new technologies. 
-            I am passionate about innovation and am seeking my next challenge in a dynamic and forward-thinking organization.
+            I'm Tal Rozenzweig, a DevOps Engineer with strong programming skills and a graduate with <span className="text-primary">honors from the Technion</span>. Known for being a fast learner and team player, I thrive on mastering new technologies.
             </p>
             <p className={darkTheme ? "text-white-50" : ""}>
-              <>some thing about my devops skills</>
+            In my role, I specialize in designing and implementing robust CI/CD pipelines that ensure rapid and reliable delivery of software. By integrating automation deeply into development workflows, I optimize deployment processes and enhance system scalability. My approach emphasizes infrastructure as code principles, enabling seamless management and provisioning of resources. I am passionate about fostering a collaborative culture where innovation and continuous improvement drive efficiencies and operational excellence.
             </p>
           </div>
           {/* About me content end */}

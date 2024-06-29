@@ -4,35 +4,35 @@ const Services = ({ classicHeader, darkTheme }) => {
   // services details
   const services = [
     {
-      name: "Graphic Design",
-      desc: "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
-      icon: "fas fa-palette",
+      name: "Continuous Integration and Continuous Deployment",
+      desc: "Implementing CI/CD pipelines automates build, test, and deployment processes for rapid and reliable software updates. Using Jenkins, Azure DevOps, TeamCity or GitHub Actions, I ensure streamlined workflows and consistent code quality.",
+      icon: "fas fa-code-branch",
     },
     {
-      name: "Web Design",
-      desc: "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
-      icon: "fas fa-desktop",
+      name: "Infrastructure as Code (IaC)",
+      desc: "Using Terraform and Ansible, I orchestrate and manage infrastructure deployments efficiently. This approach ensures consistency, scalability, and agility across cloud environments, minimizing operational overhead.",
+      icon: "fas fa-cogs",
     },
     {
-      name: "UI/UX Design",
-      desc: "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
-      icon: "fas fa-pencil-ruler",
+      name: "Containerization and Orchestration",
+      desc: "Employing Docker and Kubernetes, I containerize applications for enhanced portability and scalability. Orchestrating with Kubernetes optimizes resource usage, ensures high availability, and simplifies deployment in dynamic cloud environments.",
+      icon: "fas fa-database",
     },
     {
-      name: "App Design & Develop",
-      desc: "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
-      icon: "fas fa-paint-brush",
+      name: "Monitoring and Observability",
+      desc: "Implementing Prometheus and Grafana, I monitor system performance, detect anomalies, and gain insights into application health and infrastructure metrics. Emphasizing observability practices, I proactively resolve issues for optimal system reliability.",
+      icon: "fas fa-chart-line",
     },
     {
-      name: "Business Analysis",
-      desc: "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
-      icon: "fas fa-chart-area",
+      name: "Microservices Architecture",
+      desc: "Designing microservices architectures using Docker containers and Kubernetes orchestration. Breaking down monolithic apps into smaller services enhances scalability and supports continuous software updates.",
+      icon: "fas fa-layer-group",
     },
     {
-      name: "SEO Marketing",
-      desc: "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
-      icon: "fas fa-bullhorn",
-    },
+      name: "DevOps Automation and Tooling",
+      desc: "Automating DevOps with Jenkins, GitHub Actions, and Ansible streamlines software development, testing, and deployment. I create efficient pipelines that boost collaboration, accelerate time-to-market, and ensure software quality.",
+      icon: "fas fa-robot",
+    },    
   ];
 
   return (
