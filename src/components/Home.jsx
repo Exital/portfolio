@@ -1,6 +1,7 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
 import videobg from "../videos/home.mp4";
+import resumeFile from "../documents/resume.pdf";
 
 const Home = ({ classicHeader, darkTheme, handleNavClick }) => {
   return (
@@ -11,7 +12,7 @@ const Home = ({ classicHeader, darkTheme, handleNavClick }) => {
         {/* ---------------image background------------------ */}
         <div
           className="hero-bg parallax"
-          style={{ backgroundImage: 'url("images/intro-bg.jpg")' }}
+          style={{ backgroundImage: 'url("images/generating_melodies_1.jpeg")'}}
         ></div>
 
         {/* -------------------video background---------------------- */}
@@ -51,14 +52,11 @@ const Home = ({ classicHeader, darkTheme, handleNavClick }) => {
                 How cool is that?
                 </p>
                 <a
-                  href="#contact"
-                  className="btn btn-outline-primary rounded-pill shadow-none smooth-scroll mt-2"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    handleNavClick("contact");
-                  }}
+                  href={resumeFile}
+                  download
+                  className="btn btn-primary rounded-pill"
                 >
-                  Hire Me
+                  Download CV
                 </a>
               </div>
             </div>

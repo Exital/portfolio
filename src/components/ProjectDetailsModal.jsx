@@ -268,6 +268,19 @@ const ProjectDetailsModal = ({ darkTheme, projectDetails }) => {
                                 </a>
                               </li>
                             )}
+                            {projectDetails.socialLinks.youtube && (
+                              <li className="social-icons-youtube">
+                                <a
+                                  data-toggle="tooltip"
+                                  href={projectDetails.socialLinks.youtube}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  data-original-title="youtube"
+                                >
+                                  <i className="fab fa-youtube" />
+                                </a>
+                              </li>
+                            )}
                           </ul>
                         </div>
                       </div>

@@ -30,7 +30,7 @@ const Header = ({ classicHeader, darkTheme, homeRef, handleNavClick }) => {
               />
             </span>
             <h1 className="text-5 text-white text-center mb-0 d-lg-block">
-              Simone Olivia
+              Tal Rozenzweig
             </h1>
           </Link>
           {/* Logo End */}
@@ -166,47 +166,25 @@ const Header = ({ classicHeader, darkTheme, homeRef, handleNavClick }) => {
             </ul>
           </div>
           <ul className="social-icons social-icons-muted social-icons-sm mt-lg-auto ms-auto ms-lg-0 d-flex">
-            <li className="social-icons-facebook">
-              <Tooltip text="Facebook" placement="top">
-                <a
-                  href="http://www.facebook.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i className="fab fa-facebook-f" />
-                </a>
-              </Tooltip>
-            </li>
-            <li className="social-icons-twitter">
-              <Tooltip text="Twitter" placement="top">
-                <a
-                  href="http://www.twitter.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i className="fab fa-twitter" />
-                </a>
-              </Tooltip>
-            </li>
-            <li className="social-icons-dribbble">
-              <Tooltip text="Dribbble" placement="top">
-                <a
-                  href="http://www.dribbble.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i className="fab fa-dribbble" />
-                </a>
-              </Tooltip>
-            </li>
             <li className="social-icons-github">
-              <Tooltip text="Google" placement="top">
+              <Tooltip text="Github" placement="top">
                 <a
-                  href="http://www.google.com/"
+                  href="https://github.com/Exital"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <i className="fab fa-github" />
+                </a>
+              </Tooltip>
+            </li>
+            <li className="social-icons-linkedin">
+              <Tooltip text="Linkedin" placement="top">
+                <a
+                  href="https://www.linkedin.com/in/tal-rozenzwieg-766840232"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i className="fab fa-linkedin" />
                 </a>
               </Tooltip>
             </li>

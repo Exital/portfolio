@@ -10,11 +10,10 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
   const [selectedProjectDetails, setSelectedProjectDetails] = useState();
 
   const filters = {
-    AI: 'AI',
     IOT: 'IoT',
-    DESIGN: "Design",
-    BRAND: "Brand",
-    PHOTOS: "Photos",
+    WEB: "Web",
+    AI: 'AI',
+    OTHER: "Other",
   };
 
   const projectsData = [
@@ -29,21 +28,17 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
       technologies: "C++, Embedded, IoT, RaspberryPi, ESP32, Arduino",
       date: "Dec, 2021",
       url: {
-        name: "www.example.com",
-        link: "https://www.example.com",
+        name: "github.com/Exital/smartGarden",
+        link: "https://github.com/Exital/smartGarden",
       },
       socialLinks: {
-        facebook: "http://www.facebook.com/",
-        twitter: "http://www.twitter.com/",
-        google: "http://www.google.com/",
-        instagram: "http://www.instagram.com/",
-        mail: "mailto:example@gmail.com",
+        youtube: "https://www.youtube.com/watch?v=yvWwVqaM3DU",
       },
       thumbImage: "images/projects/smart_garden_1.jpg",
       sliderImages: [
 
       ],
-      categories: [filters.IOT],
+      categories: [filters.IOT, filters.WEB],
     },
     {
       title: "Generating melodies using Deep Learning",
@@ -54,7 +49,7 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
         Throughout the project, we overcame numerous challenges, such as memory issues and theoretical obstacles related to music preprocessing. \
         Our results, tested via Google Forms, were impressive — participants couldn't distinguish between human-written and model-generated melodies. \
         Samples are available on my GitHub.",
-      technologies: "Python, PyTorch, NumPy, Pandas, Matplotlib",
+      technologies: "Python, PyTorch, NumPy, Pandas, Matplotlib, DL algorithms",
       date: "Nov, 2021",
       url: {
         name: "github.com/Exital/GeneratingMelodies",
@@ -65,127 +60,57 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
         "images/projects/generating_melodies_2.jpg",
         "images/projects/generating_melodies_3.jpg",
       ],
+      categories: [filters.AI, filters.WEB],
+    },
+    {
+      title: "Django Web App to automate Airbnb bookings business",
+      projectInfo:
+        "I have built a django web app with multiple users for automating a business of Airbnb and Booking reservations. \
+        The app syncs reservations from different API's and calenders, automates work plans, revenue reports, employee's salaries \
+        and sending notifications to users via email for different events. \
+        The app is served from my on-prem k8s server in my living room and has SSL certificates.",
+      technologies: "Python, Django, REST APIs, Jenkins",
+      date: "May, 2021",
+      thumbImage: "images/projects/tals_place_1.jpg",
+      sliderImages: [
+
+      ],
+      categories: [filters.WEB],
+    },
+    {
+      title: "Breast cancer AI diagnostic",
+      projectInfo:
+        "I have built a KNN forest based on some researches that I have read online in order to diagnose breast cancer. \
+        The training set was obtained from the internet (30 medical features) and the model reached 97% of success after training. \
+        The forest is constructed of multiple decision trees and then the full model applies the concepts of KNN to the single trees.",
+      technologies: "Python, AI algorithms",
+      date: "Jan, 2021",
+      url: {
+        name: "Breast cancer KNN project",
+        link: "https://github.com/Exital/IntroToAi/tree/master/Projects/tal's%20project",
+      },
+      thumbImage: "images/projects/knn_1.jpg",
+      sliderImages: [
+      ],
       categories: [filters.AI],
     },
     {
-      title: "Project Title 3",
+      title: "Building a compiler for FanC",
       projectInfo:
-        "Quidam lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure. Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
-      technologies: "iOS, HTML5, CSS3, PHP, Java",
-      date: "July 16, 2019",
+        "I have built a compiler that takes a program in FanC (subset of c) and compiles it to LLVM. \
+        The compiler uses Flex for the lexical analysis and bison for the syntax analysis, everything else is written in c++ \
+        and implements the code generation step.",
+      technologies: "C++, Flex, Bison, Compilation methods",
+      date: "Fab, 2021",
       url: {
-        name: "www.example.com",
-        link: "https://www.example.com",
+        name: "FanC Compiler Github Repo",
+        link: "https://github.com/Exital/compilation/tree/master/hw5",
       },
-      socialLinks: {
-        facebook: "http://www.facebook.com/",
-        twitter: "http://www.twitter.com/",
-        google: "http://www.google.com/",
-        instagram: "http://www.instagram.com/",
-        mail: "mailto:example@gmail.com",
-      },
-      thumbImage: "images/projects/project-3.jpg",
+      thumbImage: "images/projects/compiler_1.jpg",
       sliderImages: [
-        "images/projects/project-3.jpg",
-        "images/projects/project-5.jpg",
+
       ],
-      categories: [filters.PHOTOS],
-    },
-    {
-      title: "Project Title 4",
-      projectInfo:
-        "Quidam lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure. Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
-      technologies: "iOS, HTML5, CSS3, PHP, Java",
-      date: "July 16, 2019",
-      url: {
-        name: "www.example.com",
-        link: "https://www.example.com",
-      },
-      socialLinks: {
-        facebook: "http://www.facebook.com/",
-        twitter: "http://www.twitter.com/",
-        google: "http://www.google.com/",
-        instagram: "http://www.instagram.com/",
-        mail: "mailto:example@gmail.com",
-      },
-      thumbImage: "images/projects/project-4.jpg",
-      sliderImages: [
-        "images/projects/project-1.jpg",
-        "images/projects/project-4.jpg",
-      ],
-      categories: [filters.BRAND, filters.PHOTOS],
-    },
-    {
-      title: "Project Title 5",
-      projectInfo:
-        "Quidam lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure. Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
-      technologies: "iOS, HTML5, CSS3, PHP, Java",
-      date: "July 16, 2019",
-      url: {
-        name: "www.example.com",
-        link: "https://www.example.com",
-      },
-      socialLinks: {
-        facebook: "http://www.facebook.com/",
-        twitter: "http://www.twitter.com/",
-        google: "http://www.google.com/",
-        instagram: "http://www.instagram.com/",
-        mail: "mailto:example@gmail.com",
-      },
-      thumbImage: "images/projects/project-5.jpg",
-      sliderImages: [
-        "images/projects/project-1.jpg",
-        "images/projects/project-5.jpg",
-      ],
-      categories: [filters.DESIGN],
-    },
-    {
-      title: "Project Title 6",
-      projectInfo:
-        "Quidam lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure. Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
-      technologies: "iOS, HTML5, CSS3, PHP, Java",
-      date: "July 16, 2019",
-      url: {
-        name: "www.example.com",
-        link: "https://www.example.com",
-      },
-      socialLinks: {
-        facebook: "http://www.facebook.com/",
-        twitter: "http://www.twitter.com/",
-        google: "http://www.google.com/",
-        instagram: "http://www.instagram.com/",
-        mail: "mailto:example@gmail.com",
-      },
-      thumbImage: "images/projects/project-6.jpg",
-      sliderImages: [
-        "images/projects/project-1.jpg",
-        "images/projects/project-5.jpg",
-      ],
-      categories: [filters.BRAND],
-    },
-    {
-      title: "Project Title 7",
-      projectInfo:
-        "Quidam lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure. Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
-      technologies: "iOS, HTML5, CSS3, PHP, Java",
-      date: "July 16, 2019",
-      url: {
-        name: "www.example.com",
-        link: "https://www.example.com",
-      },
-      socialLinks: {
-        facebook: "http://www.facebook.com/",
-        twitter: "http://www.twitter.com/",
-        google: "http://www.google.com/",
-        instagram: "http://www.instagram.com/",
-        mail: "mailto:example@gmail.com",
-      },
-      thumbImage: "images/projects/project-7.jpg",
-      sliderImages: [
-        "images/projects/project-1.jpg",
-        "images/projects/project-5.jpg",
-      ],
-      categories: [filters.DESIGN, filters.PHOTOS],
+      categories: [filters.OTHER],
     },
   ];
 

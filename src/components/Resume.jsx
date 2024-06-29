@@ -124,17 +124,17 @@ const Resume = ({ classicHeader, darkTheme }) => {
         </div>
         {/* Heading end*/}
         <div className="row gx-5">
-          {/* My Education */}
+          {/* My Experience */}
           <div className="col-md-6">
             <h2
               className={
                 "text-6 fw-600 mb-4 " + (darkTheme ? "text-white" : "")
               }
             >
-              My Education
+              My Experience
             </h2>
-            {educationDetails.length > 0 &&
-              educationDetails.map((value, index) => (
+            {experienceDetails.length > 0 &&
+              experienceDetails.map((value, index) => (
                 <div
                   key={index}
                   className={
@@ -164,17 +164,17 @@ const Resume = ({ classicHeader, darkTheme }) => {
                 </div>
               ))}
           </div>
-          {/* My Experience */}
+          {/* My Education */}
           <div className="col-md-6">
             <h2
               className={
                 "text-6 fw-600 mb-4 " + (darkTheme ? "text-white" : "")
               }
             >
-              My Experience
+              My Education
             </h2>
-            {experienceDetails.length > 0 &&
-              experienceDetails.map((value, index) => (
+            {educationDetails.length > 0 &&
+              educationDetails.map((value, index) => (
                 <div
                   key={index}
                   className={
