@@ -1,6 +1,33 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import resumeFile from "../documents/resume.pdf";
 const AboutUs = ({ classicHeader, darkTheme }) => {
+  const [yearsExperience, setYearsExperience] = useState(0);
+  const [age, setAge] = useState(0);
+  
+  useEffect(() => {
+    const currentYear = new Date().getFullYear();
+    const currentDate = new Date();
+    const startYear = 2019; // Assuming you started gaining experience from 2019
+    const birthDate = new Date(1992, 5, 16); // Your birth date (year, month - 1, day) months starts from 0
+  
+    // Calculate experience in years
+    const experience = currentYear - startYear;
+    setYearsExperience(experience);
+  
+    // Calculate age in years (rounded down)
+    let ageInYears = currentYear - birthDate.getFullYear();
+    const birthMonth = birthDate.getMonth();
+    const birthDay = birthDate.getDate();
+  
+    // Check if birthday yet to occurr this year
+    if (currentDate.getMonth() < birthMonth || (currentDate.getMonth() === birthMonth && currentDate.getDate() < birthDay)) {
+      ageInYears--;
+    }
+  
+    setAge(ageInYears);
+  }, []); // Empty dependency array ensures this effect runs only once on mount
+
+
   return (
     <section id="about" className={"section " + (darkTheme ? "bg-dark-1" : "")}>
       <div className={"container " + (classicHeader ? "" : "px-lg-5")}>
@@ -63,7 +90,7 @@ const AboutUs = ({ classicHeader, darkTheme }) => {
                   <a href="mailto:talrosen3@gmail.com">talrosen3@gmail.com</a>
                 </li>
                 <li>
-                  <span className="fw-600 me-2">Age:</span>32
+                  <span className="fw-600 me-2">Age:</span>{age}
                 </li>
                 <li className="border-0">
                   <span className="fw-600 me-2">From:</span>Kfar Tavor, Israel
@@ -96,7 +123,7 @@ const AboutUs = ({ classicHeader, darkTheme }) => {
                     (darkTheme ? "text-white-50" : "text-muted")
                   }
                 >
-                  <span>5</span>+
+                  <span>{yearsExperience}</span>+
                 </h4>
                 <p className={"mb-0 " + (darkTheme ? "text-light" : "")}>
                   Years Experiance
