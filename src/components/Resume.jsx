@@ -7,21 +7,21 @@ const Resume = ({ classicHeader, darkTheme }) => {
       yearRange: "2018 - 2022",
       title: "B.S in Computer Science",
       place: "Technion",
-      desc: "My final project, \"Generating Melodies with Neural Networks,\" secured first place at the Technion Computer Science AI Project Contest. I graduated with honors, earning a GPA of 91.1.",
+      desc: ["I graduated with honors, earning a GPA of 91.1.", "My final project, \"Generating Melodies with Neural Networks,\" secured first place at the Technion Computer Science AI Project Contest."],
     },
     {
       yearRange: "2011 - 2016",
       title: "Israel Defense Forces",
       place: "Ordnance Corps",
-      desc: "As Tutorials Commander of field intelligence, explosives, and optics, I held the rank of Master Sergeant. I was responsible for 60-70 soldiers, utilizing my teaching skills to help them grasp complex concepts.",
+      desc: ["As Tutorials Commander of field intelligence, explosives, and optics, I held the rank of Master Sergeant. I was responsible for 60-70 soldiers, utilizing my teaching skills to help them grasp complex concepts."],
     },
     {
       yearRange: "2006 - 2010",
       title: "Physics & Robotics",
       place: "Blich High School",
-      desc: "In high school, over the course of three years, I took electives in physics and robotics. \
+      desc: ["In high school, over the course of three years, I took electives in physics and robotics. \
        During this time, my team and I designed, built, and programmed a firefighter robot, \
-      leading to participation in the \"Roboner\" competition. Working together as a team was a great experience.",
+      leading to participation in the \"Roboner\" competition. Working together as a team was a great experience."],
     },
   ];
 
@@ -30,13 +30,17 @@ const Resume = ({ classicHeader, darkTheme }) => {
       yearRange: "2022 - Present",
       title: "DevOps Engineer",
       place: "Intel",
-      desc: "TBD - need to write a lot on my experience as devops engineer at intel",
+      desc: [
+        "Developed complex test automation for one of Intel's most critical pre- and post-silicon test generators, starting from Jenkins pipelines to Python OOP microservices, running in a Kubernetes environment.","",
+        "Implemented DevOps best practices to foster collaboration between development and operations teams, facilitating faster delivery of high-quality software products.","",
+        "Orchestrated Infrastructure as Code (IaC) using Ansible to automate all CI/CD agent installation and maintenance, while monitoring with Grafana and Prometheus.","",
+      ]
     },
     {
       yearRange: "2019 - 2021",
       title: "Software Engineer",
       place: "Rafael",
-      desc: "Engineered sophisticated embedded systems within a Linux ecosystem utilizing advanced C++ programming skills.",
+      desc: ["Engineered sophisticated embedded systems within a Linux ecosystem utilizing advanced C++ programming skills.",]
     },
   ];
 
@@ -134,7 +138,7 @@ const Resume = ({ classicHeader, darkTheme }) => {
                 <div
                   key={index}
                   className={
-                    "bg-white  rounded p-4 mb-4 " +
+                    "bg-white rounded p-4 mb-4 " +
                     (darkTheme ? "bg-dark" : "bg-white border")
                   }
                 >
@@ -147,8 +151,15 @@ const Resume = ({ classicHeader, darkTheme }) => {
                   <p className={darkTheme ? "text-primary" : "text-danger"}>
                     {value.place}
                   </p>
+                  {/* Separate lines in value.desc */}
                   <p className={"mb-0 " + (darkTheme ? "text-white-50" : "")}>
-                    {value.desc}
+                    {value.desc.map((line, index) => (
+                      <React.Fragment key={index}>
+                        {line}
+                        {/* Add <br /> tag if not the last line */}
+                        {index !== value.desc.length - 1 && <br />}
+                      </React.Fragment>
+                    ))}
                   </p>
                 </div>
               ))}
@@ -167,7 +178,7 @@ const Resume = ({ classicHeader, darkTheme }) => {
                 <div
                   key={index}
                   className={
-                    "bg-white  rounded p-4 mb-4 " +
+                    "bg-white rounded p-4 mb-4 " +
                     (darkTheme ? "bg-dark" : "bg-white border")
                   }
                 >
@@ -180,8 +191,15 @@ const Resume = ({ classicHeader, darkTheme }) => {
                   <p className={darkTheme ? "text-primary" : "text-danger"}>
                     {value.place}
                   </p>
+                  {/* Separate lines in value.desc */}
                   <p className={"mb-0 " + (darkTheme ? "text-white-50" : "")}>
-                    {value.desc}
+                    {value.desc.map((line, index) => (
+                      <React.Fragment key={index}>
+                        {line}
+                        {/* Add <br /> tag if not the last line */}
+                        {index !== value.desc.length - 1 && <br />}
+                      </React.Fragment>
+                    ))}
                   </p>
                 </div>
               ))}
