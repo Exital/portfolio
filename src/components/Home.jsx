@@ -46,7 +46,7 @@ const Home = ({ classicHeader, darkTheme, handleNavClick }) => {
                   />
                 </h2>
                 <p className="text-5 text-light mb-4">
-                  based in Kfar Tavor.
+                  based in Los Angeles, California.
                 </p>
                 <a
                   href="#contact"
