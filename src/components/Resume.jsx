@@ -4,70 +4,90 @@ import resumeFile from "../documents/resume.pdf";
 const Resume = ({ classicHeader, darkTheme }) => {
   const educationDetails = [
     {
-      yearRange: "2000 - 2004",
-      title: "Computer Science",
-      place: "International University",
-      desc: "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
+      yearRange: "2018 - 2022",
+      title: "B.S in Computer Science",
+      place: "Technion",
+      desc: "My final project, \"Generating Melodies with Neural Networks,\" secured first place at the Technion Computer Science AI Project Contest. I graduated with honors, earning a GPA of 91.1.",
     },
     {
-      yearRange: "2005 - 2008",
-      title: "Bachelor Degree",
-      place: "University of California",
-      desc: "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
+      yearRange: "2011 - 2016",
+      title: "Israel Defense Forces",
+      place: "Ordnance Corps",
+      desc: "As Tutorials Commander of field intelligence, explosives, and optics, I held the rank of Master Sergeant. I was responsible for 60-70 soldiers, utilizing my teaching skills to help them grasp complex concepts.",
     },
     {
-      yearRange: "2009 - 2012",
-      title: "Master Degree",
-      place: "Harvard University",
-      desc: "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
+      yearRange: "2006 - 2010",
+      title: "Physics & Robotics",
+      place: "Blich High School",
+      desc: "In high school, over the course of three years, I took electives in physics and robotics. \
+       During this time, my team and I designed, built, and programmed a firefighter robot, \
+      leading to participation in the \"Roboner\" competition. Working together as a team was a great experience.",
     },
   ];
 
   const experienceDetails = [
     {
-      yearRange: "2012 - 2013",
-      title: "Jr. UI UX Designer",
-      place: "Themeforest",
-      desc: "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
+      yearRange: "2022 - Present",
+      title: "DevOps Engineer",
+      place: "Intel",
+      desc: "TBD - need to write a lot on my experience as devops engineer at intel",
     },
     {
-      yearRange: "2014 - 2016",
-      title: "Jr. Product Designer",
-      place: "Dribbble",
-      desc: "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
-    },
-    {
-      yearRange: "2017 - 2019",
-      title: "Product Designer",
-      place: "Adobe",
-      desc: "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
+      yearRange: "2019 - 2021",
+      title: "Software Engineer",
+      place: "Rafael",
+      desc: "Engineered sophisticated embedded systems within a Linux ecosystem utilizing advanced C++ programming skills.",
     },
   ];
 
   const skills = [
     {
-      name: "Web Design",
-      percent: 65,
+      name: "Jenkins",
+      percent: 85,
     },
     {
-      name: "HTML/CSS",
-      percent: 95,
+      name: "Kubernetes",
+      percent: 85,
     },
     {
-      name: "JavaScript",
-      percent: 80,
+      name: "Docker",
+      percent: 85,
     },
     {
-      name: "React JS",
-      percent: 70,
+      name: "Linux, Shell Scripting",
+      percent: 85,
     },
     {
-      name: "Angular Js",
-      percent: 60,
+      name: "Ansible",
+      percent: 85,
     },
     {
-      name: "Bootstrap",
-      percent: 99,
+      name: "Python, C++",
+      percent: 85,
+    },
+    {
+      name: "Monitoring (Grafana, Prometheus, ELK)",
+      percent: 85,
+    },
+    {
+      name: "GitOps (ArgoCD)",
+      percent: 85,
+    },
+    {
+      name: "Micro Services Architecture",
+      percent: 85,
+    },
+    {
+      name: "Networking",
+      percent: 85,
+    },
+    {
+      name: "IoT",
+      percent: 85,
+    },
+    {
+      name: "Django",
+      percent: 85,
     },
   ];
 

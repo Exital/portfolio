@@ -5,31 +5,30 @@ import Slider from "react-slick";
 const Testimonials = ({ classicHeader, darkTheme }) => {
   const reviews = [
     {
-      name: "Dennis Jacques",
-      position: "User from USA",
-      src: "images/testimonial/client-sm-3.jpg",
-      desc: "Only trying it out since a few days. But up to now excellent. Seems to work flawlessly. priced simply dummy text of the printing and typesetting industry.",
+      name: "Naomi Shachar",
+      position: "Team Lead",
+      src: "images/testimonial/naomi_shachar.jpg",
+      desc: "Tal worked for me as a student intern for 2 years. \
+      He is autodidact and has extraordinary ability to explore solutions. \
+      Tal is able to face a complex problem and solve it from end to end while bringing up other important aspects of the problem.",
       rating: 5,
     },
     {
-      name: "Jay Shah",
-      position: "Founder at Icomatic Pvt Ltd",
-      src: "images/testimonial/client-sm-1.jpg",
-      desc: "Easy to use, reasonably priced simply dummy text of the printing and typesetting industry. Quidam lisque persius interesset his et, in quot quidam possim iriure.",
+      name: "Oren Paz",
+      position: "Senior Software Engineer and Active Scrum Master",
+      src: "images/testimonial/oren_paz.jpg",
+      desc: "We’ve worked together on several projects and Tal is one of the best people to have as a partner. \
+      He is a quick learner and have the ability to implement new technologies for the benefit of the entire team. \
+      I highly recommend Tal as a programmer and would love to work together again.",
       rating: 5,
     },
     {
-      name: "Patrick Cary",
-      position: "Freelancer from USA",
-      src: "images/testimonial/client-sm-2.jpg",
-      desc: "I am happy Working with printing and typesetting industry. Quidam lisque persius interesset his et, in quot quidam persequeris essent possim iriure.",
-      rating: 5,
-    },
-    {
-      name: "Chris Tom",
-      position: "User from UK",
-      src: "images/testimonial/client-sm-4.jpg",
-      desc: "I have used them twice now. Good rates, very efficient service and priced simply dummy text of the printing and typesetting industry quidam interesset his et. Excellent.",
+      name: "Dov Tuchman",
+      position: "Senior Software Engineer",
+      src: "images/testimonial/dov_tuchman.jpg",
+      desc: "I have met Tal when he was an intern student on my team and I was assigned as his tutor. \
+      I quickly noticed that Tal has extraordinary abilities including the ability to understand tasks and \
+      solve problems in addition to being a fun friend to meet every morning.",
       rating: 5,
     },
   ];
@@ -75,7 +74,7 @@ const Testimonials = ({ classicHeader, darkTheme }) => {
             }
           >
             {" "}
-            Client Speak
+            How Team Members Describe Me
             <span className="heading-separator-line border-bottom border-3 border-primary d-block mx-auto" />
           </p>
         </div>

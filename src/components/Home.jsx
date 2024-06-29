@@ -30,15 +30,14 @@ const Home = ({ classicHeader, darkTheme, handleNavClick }) => {
           <div className="container my-auto">
             <div className="row">
               <div className="col-12 text-center">
-                <p className="text-7 fw-500 text-white mb-2 mb-md-3">Welcome</p>
+                <h3 class="text-9 fw-500 text-white mb-2 mb-md-3">Tal Rozenzweig</h3>
                 <h2 className="text-16 fw-600 text-white mb-2 mb-md-3">
                   <Typewriter
                     options={{
                       strings: [
-                        "I'm Simone Olivia.",
-                        "I'm a Freelancer.",
-                        "I'm a Photographer.",
-                        "I'm a Designer.",
+                        "DevOps Engineer",
+                        "Software Developer",
+                        "Tech Enthusiast",
                       ],
                       autoStart: true,
                       loop: true,
@@ -46,7 +45,10 @@ const Home = ({ classicHeader, darkTheme, handleNavClick }) => {
                   />
                 </h2>
                 <p className="text-5 text-light mb-4">
-                  based in Los Angeles, California.
+                This website is powered by my private On-Prem K8S cluster that I built in my living room.
+                </p>
+                <p className="text-9 text-light mb-4">
+                How cool is that?
                 </p>
                 <a
                   href="#contact"

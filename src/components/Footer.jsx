@@ -1,6 +1,13 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 const Footer = ({ classicHeader, darkTheme, handleNavClick }) => {
+  const [currentYear, setCurrentYear] = useState(new Date().getFullYear());
+
+  useEffect(() => {
+    // Update currentYear state with the current year
+    setCurrentYear(new Date().getFullYear());
+  }, []); // Empty dependency array ensures this effect runs only once on mount
+
   return (
     <footer
       id="footer"
@@ -10,7 +17,7 @@ const Footer = ({ classicHeader, darkTheme, handleNavClick }) => {
         <div className="row">
           <div className="col-lg-6 text-center text-lg-start">
             <p className="mb-3 mb-lg-0">
-              Copyright © 2023{" "}
+              Copyright © {currentYear}{" "}
               <a
                 href="#home"
                 className="fw-500"
@@ -19,7 +26,7 @@ const Footer = ({ classicHeader, darkTheme, handleNavClick }) => {
                   handleNavClick("home");
                 }}
               >
-                Simone
+                Tal Rozenzweig
               </a>
               . All Rights Reserved.
             </p>

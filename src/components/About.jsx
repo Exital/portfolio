@@ -33,19 +33,16 @@ const AboutUs = ({ classicHeader, darkTheme }) => {
                 "text-7 fw-600 mb-3 " + (darkTheme ? "text-white" : "")
               }
             >
-              I'm <span className="text-primary">Simone Olivia,</span> a Web
-              Developer
+              I'm <span className="text-primary">Tal Rozenzweig,</span> a DevOps
+              Engineer
             </h2>
             <p className={darkTheme ? "text-white-50" : ""}>
-              I help you build brand for your business at an affordable price.
-              Thousands of clients have procured exceptional results while
-              working with our dedicated team. when an unknown printer took a
-              galley of type and scrambled it to make a type specimen book.
+            I am a DevOps Engineer with strong programming skills, having graduated with <span className="text-primary">honors from the Technion</span>.
+            Known for being a fast learner and team player, I thrive on mastering new technologies. 
+            I am passionate about innovation and am seeking my next challenge in a dynamic and forward-thinking organization.
             </p>
             <p className={darkTheme ? "text-white-50" : ""}>
-              Delivering work within time and budget which meets client’s
-              requirements is our moto. Lorem Ipsum has been the industry's
-              standard dummy text ever when an unknown printer took a galley.
+              <>some thing about my devops skills</>
             </p>
           </div>
           {/* About me content end */}
@@ -59,18 +56,17 @@ const AboutUs = ({ classicHeader, darkTheme }) => {
                 }
               >
                 <li>
-                  <span className="fw-600 me-2">Name:</span>Simone Olivia
+                  <span className="fw-600 me-2">Name:</span>Tal Rozenzweig
                 </li>
                 <li>
                   <span className="fw-600 me-2">Email:</span>
-                  <a href="mailto:chat@simone.com">chat@simone.com</a>
+                  <a href="mailto:talrosen3@gmail.com">talrosen3@gmail.com</a>
                 </li>
                 <li>
-                  <span className="fw-600 me-2">Age:</span>28
+                  <span className="fw-600 me-2">Age:</span>32
                 </li>
                 <li className="border-0">
-                  <span className="fw-600 me-2">From:</span>Los Angeles,
-                  California
+                  <span className="fw-600 me-2">From:</span>Kfar Tavor, Israel
                 </li>
               </ul>
               <a
@@ -100,7 +96,7 @@ const AboutUs = ({ classicHeader, darkTheme }) => {
                     (darkTheme ? "text-white-50" : "text-muted")
                   }
                 >
-                  <span>10</span>+
+                  <span>5</span>+
                 </h4>
                 <p className={"mb-0 " + (darkTheme ? "text-light" : "")}>
                   Years Experiance
@@ -115,10 +111,10 @@ const AboutUs = ({ classicHeader, darkTheme }) => {
                     (darkTheme ? "text-white-50" : "text-muted")
                   }
                 >
-                  <span>250</span>+
+                  <span>91.1</span>
                 </h4>
                 <p className={"mb-0 " + (darkTheme ? "text-light" : "")}>
-                  Happy Clients
+                  GPA
                 </p>
               </div>
             </div>
@@ -130,22 +126,7 @@ const AboutUs = ({ classicHeader, darkTheme }) => {
                     (darkTheme ? "text-white-50" : "text-muted")
                   }
                 >
-                  <span>650</span>+
-                </h4>
-                <p className={"mb-0 " + (darkTheme ? "text-light" : "")}>
-                  Projects Done
-                </p>
-              </div>
-            </div>
-            <div className="col-6 col-md-3">
-              <div className="featured-box text-center">
-                <h4
-                  className={
-                    "text-12  mb-0 " +
-                    (darkTheme ? "text-white-50" : "text-muted")
-                  }
-                >
-                  <span>38</span>
+                  <span>6</span>
                 </h4>
                 <p className={"mb-0 " + (darkTheme ? "text-light" : "")}>
                   Get Awards
