@@ -39,20 +39,20 @@ const ClassicHeader = ({ handleNavClick }) => {
           <div className="col-auto col-lg-2">
             {/* Logo */}
             <Link
-              smooth
-              duration={500}
-              style={{ cursor: "pointer" }}
-              className="logo"
-              to="home"
-              title="Tal"
-              onClick={(e) => {
-                e.preventDefault();
-                setIsNavModalClose(true);
-              }}
-            >
-              {" "}
-              <img src="images/logo-light.png" alt="Tal" />{" "}
-            </Link>
+            smooth
+            duration={500}
+            style={{ cursor: "pointer" }}
+            to="home"
+            className="mb-lg-auto mt-lg-4"
+            onClick={(e) => {
+              e.preventDefault();
+              setIsNavModalClose(true);
+            }}
+          >
+            <h1 className="text-5 text-white text-center mb-0 d-lg-block">
+              Tal Rozenzweig
+            </h1>
+          </Link>
             {/* Logo End */}
           </div>
           <div className="col col-lg-8 navbar-accordion">
