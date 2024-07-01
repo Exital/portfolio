@@ -31,7 +31,7 @@ const Footer = ({ classicHeader, darkTheme, handleNavClick }) => {
               . All Rights Reserved.
             </p>
           </div>
-          <div className="col-lg-6">
+          {/* <div className="col-lg-6">
             <ul className="nav nav-separator justify-content-center justify-content-lg-end">
               <li className="nav-item">
                 <a
@@ -54,7 +54,7 @@ const Footer = ({ classicHeader, darkTheme, handleNavClick }) => {
                 </a>
               </li>
             </ul>
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>

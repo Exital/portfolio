@@ -55,7 +55,7 @@ const Resume = ({ classicHeader, darkTheme }) => {
     },
     {
       name: "Docker",
-      percent: 85,
+      percent: 90,
     },
     {
       name: "Linux, Shell Scripting",
@@ -67,7 +67,7 @@ const Resume = ({ classicHeader, darkTheme }) => {
     },
     {
       name: "Python, C++",
-      percent: 85,
+      percent: 95,
     },
     {
       name: "Monitoring (Grafana, Prometheus, ELK)",
@@ -75,19 +75,19 @@ const Resume = ({ classicHeader, darkTheme }) => {
     },
     {
       name: "GitOps (ArgoCD)",
-      percent: 85,
+      percent: 90,
     },
     {
       name: "Micro Services Architecture",
-      percent: 85,
+      percent: 80,
     },
     {
       name: "Networking",
-      percent: 85,
+      percent: 80,
     },
     {
       name: "IoT",
-      percent: 85,
+      percent: 90,
     },
     {
       name: "Django",
