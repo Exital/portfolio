@@ -5,12 +5,10 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.dev
+    env_file:
+      - .env
     ports:
       - "3000:3000"
     volumes:
     - ./src:/app/src
     - ./public:/app/public
-    environment:
-      - REACT_APP_EMAILJS_SERVICE_ID=${REACT_APP_EMAILJS_SERVICE_ID}
-      - REACT_APP_EMAILJS_TEMPLATE_ID=${REACT_APP_EMAILJS_TEMPLATE_ID}
-      - REACT_APP_EMAILJS_USER_ID=${REACT_APP_EMAILJS_USER_ID}
