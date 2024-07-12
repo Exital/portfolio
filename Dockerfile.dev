@@ -1,4 +1,4 @@
-# Use an official Node.js runtime as the base image test
+# Use an official Node.js runtime as the base image
 FROM node:21-alpine
 
 # Set environment variables for the application using .env file
