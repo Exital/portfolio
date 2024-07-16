@@ -1,7 +1,7 @@
 # Use an official Node.js runtime as the base image
 FROM node:21-alpine
 
-# Set environment variables for the application using .env file test
+# Set environment variables for the application using .env file
 # [REACT_APP_EMAILJS_SERVICE_ID, REACT_APP_EMAILJS_TEMPLATE_ID, REACT_APP_EMAILJS_USER_ID]
 
 # Set the working directory inside the container
