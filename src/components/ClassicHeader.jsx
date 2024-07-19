@@ -180,7 +180,7 @@ const ClassicHeader = ({ handleNavClick }) => {
                       setIsNavModalClose(true);
                     }}
                   >
-                    Client
+                    Testimonial
                   </Link>
                 </li>
                 <li className="nav-item">
