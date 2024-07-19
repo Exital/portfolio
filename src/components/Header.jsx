@@ -143,7 +143,7 @@ const Header = ({ classicHeader, darkTheme, homeRef, handleNavClick }) => {
                     setIsNavModalClose(true);
                   }}
                 >
-                  Testimonial
+                  Testimonials
                 </Link>
               </li>
               <li className="nav-item">
