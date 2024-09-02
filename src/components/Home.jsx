@@ -31,7 +31,7 @@ const Home = ({ classicHeader, darkTheme, handleNavClick }) => {
           <div className="container my-auto">
             <div className="row">
               <div className="col-12 text-center">
-                <h3 class="text-9 fw-500 text-white mb-2 mb-md-3">Tal Rozenzweig</h3>
+                <h3 class="text-9 fw-500 text-white mb-2 mb-md-3">Tal Rozen</h3>
                 <h2 className="text-16 fw-600 text-white mb-2 mb-md-3">
                   <Typewriter
                     options={{
