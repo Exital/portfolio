@@ -60,11 +60,11 @@ const AboutUs = ({ classicHeader, darkTheme }) => {
                 "text-7 fw-600 mb-3 " + (darkTheme ? "text-white" : "")
               }
             >
-              I'm <span className="text-primary">Tal Rozenzweig,</span> a DevOps
+              I'm <span className="text-primary">Tal Rozenzwieg,</span> a DevOps
               Engineer
             </h2>
             <p className={darkTheme ? "text-white-50" : ""}>
-            I'm Tal Rozenzweig, a DevOps Engineer with strong programming skills and a graduate with <span className="text-primary">honors from the Technion</span>. Known for being a fast learner and team player, I thrive on mastering new technologies.
+            I'm Tal Rozenzwieg, a DevOps Engineer with strong programming skills and a graduate with <span className="text-primary">honors from the Technion</span>. Known for being a fast learner and team player, I thrive on mastering new technologies.
             </p>
             <p className={darkTheme ? "text-white-50" : ""}>
             In my role, I specialize in designing and implementing robust CI/CD pipelines that ensure rapid and reliable delivery of software. By integrating automation deeply into development workflows, I optimize deployment processes and enhance system scalability. My approach emphasizes infrastructure as code principles, enabling seamless management and provisioning of resources. I am passionate about fostering a collaborative culture where innovation and continuous improvement drive efficiencies and operational excellence.
@@ -81,7 +81,7 @@ const AboutUs = ({ classicHeader, darkTheme }) => {
                 }
               >
                 <li>
-                  <span className="fw-600 me-2">Name:</span>Tal Rozenzweig
+                  <span className="fw-600 me-2">Name:</span>Tal Rozenzwieg
                 </li>
                 <li>
                   <span className="fw-600 me-2">Email:</span>

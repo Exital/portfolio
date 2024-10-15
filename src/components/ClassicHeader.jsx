@@ -50,7 +50,7 @@ const ClassicHeader = ({ handleNavClick }) => {
             }}
           >
             <h1 className="text-5 text-white text-center mb-0 d-lg-block">
-              Tal Rozenzweig
+              Tal Rozenzwieg
             </h1>
           </Link>
             {/* Logo End */}

@@ -26,7 +26,7 @@ const Footer = ({ classicHeader, darkTheme, handleNavClick }) => {
                   handleNavClick("home");
                 }}
               >
-                Tal Rozenzweig
+                Tal Rozenzwieg
               </a>
               . All Rights Reserved.
             </p>
